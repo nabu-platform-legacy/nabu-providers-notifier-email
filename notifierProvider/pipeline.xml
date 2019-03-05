@@ -1,0 +1,14 @@
+<structure interface="be.nabu.eai.repository.api.NotificationProvider.notify" name="pipeline">
+    <structure name="input">
+        <structure definition="nabu.providers.notifier.email.configuration" name="configuration"/>
+    </structure>
+    <structure name="output"/>
+    <field name="email" type="java.lang.String"/>
+    <structure definition="nabu.providers.notifier.email.configuration" name="configuration"/>
+    <field minOccurs="0" name="context" type="java.lang.String"/>
+    <field minOccurs="0" name="subject" type="java.lang.String"/>
+    <field minOccurs="0" name="server" type="java.lang.String"/>
+    <field minOccurs="0" name="group" type="java.lang.String"/>
+    <field name="json" type="java.lang.String"/>
+    <field name="xml" type="java.lang.String"/>
+</structure>

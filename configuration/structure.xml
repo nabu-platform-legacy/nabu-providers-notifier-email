@@ -1,0 +1,10 @@
+<structure name="email">
+    <field name="smtpClient" type="java.lang.String"/>
+    <structure minOccurs="0" name="template">
+        <field name="webApplicationId" type="java.lang.String"/>
+        <field name="url" type="java.net.URI"/>
+    </structure>
+    <field minOccurs="0" name="from" type="java.lang.String"/>
+    <field maxOccurs="unbounded" name="to" type="java.lang.String"/>
+    <field minOccurs="0" name="subject" type="java.lang.String"/>
+</structure>
